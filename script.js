@@ -1,7 +1,7 @@
 class Calculator {
     constructor (previousOperandTextElement, currentOperandTextElement) {
         this.previousOperandTextElement = previousOperandTextElement
-        this.currentOperandTextElement = previousOperandTextElement
+        this.currentOperandTextElement = currentOperandTextElement
         this.clear()
     }
 
@@ -74,11 +74,6 @@ class Calculator {
         }else{
             return integerDisplay
         }
-        
-        // const floatNumber = parseFloat(number)
-        // if(isNaN(floatNumber)) return ''
-        // return number.toLocaleString('en')
-
     }
 
     updateDisplay(){
