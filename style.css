@@ -7,7 +7,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, rgb(255, 222, 10), rgb(12, 125, 2));
+    background: linear-gradient(to right, rgb(192, 156, 0), rgb(8, 99, 2));
 }
 
 .calculator-grid{
@@ -56,3 +56,25 @@ body {
     color: white;
     font-size: 2.5rem;
 }
+
+.flex-container {
+    display: flex;
+    align-items: stretch;
+    
+  }
+  
+  .flex-container > div {
+    
+    color: white;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
